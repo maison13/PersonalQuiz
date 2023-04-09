@@ -40,9 +40,10 @@ final class ResultViewController: UIViewController {
             .rabbit: animals.filter { $0 == .rabbit }.count,
             .cat: animals.filter { $0 == .cat }.count
         ]
+
         let frequentAnswersSorted = animalsCount.sorted(by: {
-            (pair1, pair2) -> Bool in
-            return pair1.value > pair2.value
+            (pairOne, pairTwo) -> Bool in
+            return pairOne.value > pairTwo.value
         })
         let mostCommonAnswer = frequentAnswersSorted.first!.key
         
