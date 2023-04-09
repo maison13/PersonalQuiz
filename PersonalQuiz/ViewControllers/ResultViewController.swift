@@ -28,10 +28,9 @@ final class ResultViewController: UIViewController {
     }
     
     private func getAnimals() -> [Animal] {
-        
         for answer in answersResult {
             animals.append(answer.animal)
-        }
+        }  
         return animals
     }
     private func getDefinition() {
